@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: #00534E;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .attractions {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .attraction-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .attraction-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .attraction-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .attraction-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .attraction-card:hover .attraction-img img {
+            transform: scale(1.1);
+        }
+        
+        .attraction-content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header><h1>Tourism</h1></header>
+
+    <div class="attractions">
+    <div class="attraction-card">
+        <div class="attraction-img">
+            <img src="/assets/img/Sigiriya.jpg" alt="Sigiriya Rock">
+        </div>
+        <div class="attraction-content">
+            <h3>Sigiriya Rock Fortress</h3>
+            <p>This ancient rock fortress and palace ruin is one of Sri Lanka's most iconic landmarks. The 200-meter-high rock features frescoes, mirror walls, and lion's paw entrance. A UNESCO World Heritage Site dating back to the 5th century.</p>
+        </div>
+    </div>
+
+   <div class="attraction-card">
+        <div class="attraction-img">
+            <img src="/assets/img/templeofthesacredtoothrelic.jpg" alt="Temple of the Sacred Tooth Relic">
+        </div>
+        <div class="attraction-content">
+            <h3>Temple of the Sacred Tooth Relic (Kandy)</h3>
+            <p>Located in Kandy, this temple houses what is believed to be the tooth of Buddha. It's one of Buddhism's most sacred sites and a key pilgrimage destination. The annual Esala Perahera festival features a spectacular procession with decorated elephants.</p>
+        </div>
+    </div>
+
+    <div class="attraction-card">
+        <div class="attraction-img">
+            <img src="/assets/img/YalaNationalPark.jpg" alt="Yala National Park">
+        </div>
+        <div class="attraction-content">
+            <h3>Yala National Park</h3>
+            <p>Sri Lanka's most famous wildlife park, known for its high density of leopards. Also home to elephants, sloth bears, crocodiles, and numerous bird species. The park combines scrub jungle with beaches and freshwater lakes.</p>
+        </div>
+    </div>
+
+    <div class="attraction-card">
+        <div class="attraction-img">
+            <img src="/assets/img/GalleFort.jpg" alt="Galle Fort">
+        </div>
+        <div class="attraction-content">
+            <h3>Galle Fort</h3>
+            <p>A UNESCO World Heritage Site, this 17th-century Dutch fort is a living monument with colonial-era buildings, boutique hotels, restaurants, and shops within its walls. The fort offers stunning ocean views and a glimpse into Sri Lanka's colonial past.</p>
+        </div>
+    </div>
+
+    <div class="attraction-card">
+        <div class="attraction-img">
+            <img src="/assets/img/Adam'sPeak.jpg" alt="Adam's Peak">
+        </div>
+        <div class="attraction-content">
+            <h3>Adam's Peak (Sri Pada)</h3>
+            <p>Sacred to multiple religions, this 2,243m mountain features a footprint-shaped mark at its summit believed by Buddhists to be Buddha's, by Hindus to be Shiva's, and by Muslims and Christians to be Adam's. The sunrise pilgrimage climb is unforgettable.</p>
+        </div>
+    </div>
+
+    <div class="attraction-card">
+        <div class="attraction-img">
+            <img src="/assets/img/MirissaBeach.jpg" alt="Mirissa Beach">
+        </div>
+        <div class="attraction-content">
+            <h3>Mirissa Beach</h3>
+            <p>One of Sri Lanka's most beautiful beaches, known for its crescent-shaped bay, palm trees, and excellent whale watching opportunities (November-April). A perfect spot for relaxation, surfing, and enjoying fresh seafood.</p>
+        </div>
+    </div>
+    </div>
+    
+
+</body>
+</html>
